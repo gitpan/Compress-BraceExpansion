@@ -5,13 +5,7 @@ use strict;
 
 use Data::Dumper;
 
-# tasks - use it or lose it
-use Carp;
-
-# tasks - get rid of dependence on clone module
-use Clone qw(clone);
-
-use version; our $VERSION = qv('0.1.1');
+use version; our $VERSION = qv('0.1.2');
 
 use Class::Std::Utils;
 {
@@ -261,7 +255,7 @@ use Class::Std::Utils;
             }
 
             unless ( $pruned ) {
-                $pruned = clone( $depth_pointer->{ $next_node } );
+                $pruned = $depth_pointer->{ $next_node };
                 #print "PRUNED:\n";
                 #print Dumper $pruned;
             }
@@ -365,7 +359,7 @@ suitable for shell brace expansion.
 
 =head1 VERSION
 
-This document describes Compress::BraceExpansion version 0.1.1.  This
+This document describes Compress::BraceExpansion version 0.1.2.  This
 is a beta release.
 
 
@@ -426,7 +420,7 @@ convention, e.g.:
 After running through this module, they can be displayed much more
 efficiently on a pager as:
 
-    app-dc-srv{0{1,2,3,4,5,6,7,8,9},10}
+    app-dc-srv{0,1,2,3,4,5,6,7,8,9},10}
 
 The algorithm also works great for directories:
 

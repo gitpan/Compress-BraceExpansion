@@ -5,8 +5,8 @@ Makefile.PL
 MANIFEST
 META.yml
 README
-scripts/brace-compress-tester.pl
 scripts/brace-compress
+scripts/brace-compress-tester.pl
 t/00.load.t
 t/02.compress.t
 t/03.build_tree.t

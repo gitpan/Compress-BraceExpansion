@@ -1,5 +1,9 @@
 Revision history for Compress-BraceExpansion
 
+0.1.2 Sun Dec 17, 2006  2:32 pm
+
+    - removed a couple of unnecessary modules
+
 0.1.1 Sun Dec 17, 2006  1:33 pm
 
     - refactored to use an OO interface - slightly reduced some of

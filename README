@@ -1,4 +1,4 @@
-Compress-BraceExpansion version 0.1.1
+Compress-BraceExpansion version 0.1.2
 
 This module performs the opposite function of shell brace expansion.
 It takes as input a series of strings containing similar patterns and

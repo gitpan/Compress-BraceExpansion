@@ -10,9 +10,9 @@ WriteMakefile(
     PL_FILES            => {},
     EXE_FILES           => [ qw[ scripts/brace-compress ] ],
     PREREQ_PM => {
-        'Test::More' => 0,
-        'version'    => 0,
-        'Clone'      => 0,
+        'Test::More'        => 0,
+        'version'           => 0,
+        'Class::Std::Utils' => 0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'Compress-BraceExpansion-*' },
