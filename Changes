@@ -1,8 +1,20 @@
 Revision history for Compress-BraceExpansion
 
+0.1.1 Sun Dec 17, 2006  1:33 pm
+
+    - refactored to use an OO interface - slightly reduced some of
+      the implementation complexity.
+
+    - added debugging flag
+
+0.0.7 Sat Dec 16, 2006  5:14 pm
+
+    - first publicly available release
+
 0.0.6  Sun Nov 12, 2006  6:28 pm
 
     - tweaks to automatic test case generator
+
     - fixed bug for longer branches 
     
 

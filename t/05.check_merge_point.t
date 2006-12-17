@@ -6,7 +6,7 @@ use Data::Dumper;
 use Test::More qw(no_plan);
 use Compress::BraceExpansion;
 
-use lib "t/";
+use lib "t";
 use CompressBraceExpansionTestCases;
 
 while ( my $test_case = CompressBraceExpansionTestCases::get_next_test_case() ) {

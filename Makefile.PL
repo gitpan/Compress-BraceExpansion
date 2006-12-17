@@ -8,6 +8,7 @@ WriteMakefile(
     VERSION_FROM        => 'lib/Compress/BraceExpansion.pm',
     ABSTRACT_FROM       => 'lib/Compress/BraceExpansion.pm',
     PL_FILES            => {},
+    EXE_FILES           => [ qw[ scripts/brace-compress ] ],
     PREREQ_PM => {
         'Test::More' => 0,
         'version'    => 0,
