@@ -5,7 +5,7 @@ use strict;
 
 use Data::Dumper;
 
-use version; our $VERSION = qv('0.1.2');
+use version; our $VERSION = qv('0.1.3');
 
 use Class::Std::Utils;
 {
@@ -359,7 +359,7 @@ suitable for shell brace expansion.
 
 =head1 VERSION
 
-This document describes Compress::BraceExpansion version 0.1.2.  This
+This document describes Compress::BraceExpansion version 0.1.3.  This
 is a beta release.
 
 
@@ -420,7 +420,7 @@ convention, e.g.:
 After running through this module, they can be displayed much more
 efficiently on a pager as:
 
-    app-dc-srv{0,1,2,3,4,5,6,7,8,9},10}
+    app-dc-srv{0{1,2,3,4,5,6,7,8,9},10}
 
 The algorithm also works great for directories:
 

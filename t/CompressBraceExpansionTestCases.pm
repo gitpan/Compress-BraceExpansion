@@ -143,3 +143,47 @@ sub get_next_test_case {
 
 
 1;
+
+
+
+# +    { 'expanded' => [ qw( abcdf abcef xxxf xzzf ) ],
+# +      'tree' => { 'ROOT' => {
+# +                      'a' => {
+# +                               'b' => {
+# +                                        'c' => {
+# +                                                 'e' => {
+# +                                                          'f' => {
+# +                                                                   'end' => 1
+# +                                                                 }
+# +                                                        },
+# +                                                 'd' => {
+# +                                                          'f' => {
+# +                                                                   'end' => 1
+# +                                                                 }
+# +                                                        }
+# +                                               }
+# +                                      }
+# +                             },
+# +                      'x' => {
+# +                               'x' => {
+# +                                        'x' => {
+# +                                                 'f' => {
+# +                                                          'end' => 1
+# +                                                        }
+# +                                               }
+# +                                      },
+# +                               'z' => {
+# +                                        'z' => {
+# +                                                 'f' => {
+# +                                                          'end' => 1
+# +                                                        }
+# +                                               }
+# +                                      }
+# +                             }
+# +                    } },
+# +      'tree_merge' => undef,
+# +      'compressed' => '{abc{d,e},x{xx,zz}}f',
+# +      'tree_print' => '{abc{d,e},x{xx,zz}}f',
+# +      'merge_point' => undef,
+# +      'description' => 'four branches that converge at the end - abcdf abcef xxxf xzzf  => {abc{d,e},x{xx,zz}}f',
+# +  },
