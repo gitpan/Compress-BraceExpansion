@@ -5,7 +5,7 @@ use strict;
 
 use Data::Dumper;
 
-use version; our $VERSION = qv('0.1.3');
+use version; our $VERSION = qv('0.1.4');
 
 use Class::Std::Utils;
 {
@@ -132,7 +132,9 @@ use Class::Std::Utils;
                         $buffer .= $node;
                         my $lbuffer;
                         ( $lbuffer, $pointer ) = $self->_print_tree_recurse( $tree_h->{$node} );
-                        $buffer .= $lbuffer||"";
+                         if ( defined $lbuffer ) {
+                             $buffer .= "$lbuffer";
+                         }
                     }
                 }
             }

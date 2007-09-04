@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use Data::Dumper;
 
-use Test::More tests => 24;
+use Test::More tests => 26;
 use Compress::BraceExpansion;
 
 use lib "t";

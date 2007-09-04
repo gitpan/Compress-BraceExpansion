@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-use Test::More tests => 13;
+use Test::More tests => 14;
 use_ok( 'Compress::BraceExpansion' );
 
 use lib "t";

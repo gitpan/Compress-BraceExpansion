@@ -20,6 +20,14 @@ my $test_case_data = [
       'merge_point' => 1,
       'description' => 'two identical strings - abc abc => abc'
   },
+    { 'expanded' => [ qw( ab0 ab0 ) ],
+      'tree' => { 'ROOT' => { 'a' => { 'b' => { '0' => { 'end' => 1 } } } } },
+      'tree_merge' => { 'ROOT' => { 'a' => { 'b' => { '0' => { 'end' => 1 } } } } },
+      'compressed' => 'ab0',
+      'tree_print' => 'ab0',
+      'merge_point' => 1,
+      'description' => 'two identical strings ending in 0 - ab0 ab0 => ab0'
+  },
     { 'expanded' => [ qw( aaa bbb ) ],
       'tree' => { 'ROOT' => { 'a' => { 'a' => { 'a' => { 'end' => 1 } } },
                               'b' => { 'b' => { 'b' => { 'end' => 1 } } } } },
