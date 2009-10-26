@@ -1,19 +1,22 @@
+
 use strict;
 use warnings;
+
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-    NAME                => 'Compress::BraceExpansion',
-    AUTHOR              => 'Alex White <vvu@geekfarm.org>',
-    VERSION_FROM        => 'lib/Compress/BraceExpansion.pm',
-    ABSTRACT_FROM       => 'lib/Compress/BraceExpansion.pm',
-    PL_FILES            => {},
-    EXE_FILES           => [ qw[ scripts/brace-compress ] ],
-    PREREQ_PM => {
-        'Test::More'        => 0,
-        'version'           => 0,
-        'Class::Std::Utils' => 0,
-    },
-    dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
-    clean               => { FILES => 'Compress-BraceExpansion-*' },
+  DISTNAME  => 'Compress-BraceExpansion',
+  NAME      => 'Compress::BraceExpansion',
+  AUTHOR    => 'Alex\ White\ \<VVu\@geekfarm\.org\>',
+  ABSTRACT  => 'create\ a\ human\-readable\ compressed\ string\ suitable\ for\ shell\ brace\ expansion',
+  VERSION   => '0.1.6',
+  EXE_FILES => [ qw(bin/brace-compress bin/brace-compress-tester.pl bin/trie-compress.pl) ],
+  (eval { ExtUtils::MakeMaker->VERSION(6.31) } ? (LICENSE => 'bsd') : ()),
+  PREREQ_PM    => {
+    "Test::More" => '0',
+    "Class::Std::Utils" => '0',
+    "Data::Dumper" => '0',
+  },
+  test => {TESTS => 't/*.t'}
 );
+

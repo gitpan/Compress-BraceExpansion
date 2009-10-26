@@ -5,7 +5,8 @@ use strict;
 
 use Data::Dumper;
 
-use version; our $VERSION = qv('0.1.4');
+our $VERSION = '0.1.6';
+
 
 use Class::Std::Utils;
 {
@@ -176,7 +177,7 @@ use Class::Std::Utils;
     # identical ends are found on all branches, copy the branch off to a
     # temporary branch location and replace the originals with a link to
     # the new location.  Currently this only handles the cases where all
-    # branches are identical at some depth.
+    # branches are identical from some point until the end of the strings.
     sub _merge_tree_recurse {
         my ( $self, $tree, $root ) = @_;
 
@@ -355,13 +356,12 @@ __END__
 
 =head1 NAME
 
-Compress::BraceExpansion - create a human-readable compressed string
-suitable for shell brace expansion.
+Compress::BraceExpansion - create a human-readable compressed string suitable for shell brace expansion
 
 
 =head1 VERSION
 
-This document describes Compress::BraceExpansion version 0.1.3.  This
+This document describes Compress::BraceExpansion version 0.1.5.  This
 is a beta release.
 
 

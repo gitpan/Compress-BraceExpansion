@@ -1,12 +1,14 @@
-Build.PL
 Changes
-lib/Compress/BraceExpansion.pm
-Makefile.PL
+LICENSE
 MANIFEST
 META.yml
+Makefile.PL
 README
-scripts/brace-compress
-scripts/brace-compress-tester.pl
+bin/brace-compress
+bin/brace-compress-tester.pl
+bin/trie-compress.pl
+dist.ini
+lib/Compress/BraceExpansion.pm
 t/00.load.t
 t/02.compress.t
 t/03.build_tree.t
@@ -18,3 +20,5 @@ t/CompressBraceExpansionTestCases.pm
 t/perlcritic.t
 t/pod-coverage.t
 t/pod.t
+t/release-pod-coverage.t
+t/release-pod-syntax.t
