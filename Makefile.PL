@@ -9,7 +9,7 @@ WriteMakefile(
   NAME      => 'Compress::BraceExpansion',
   AUTHOR    => 'Alex\ White\ \<VVu\@geekfarm\.org\>',
   ABSTRACT  => 'create\ a\ human\-readable\ compressed\ string\ suitable\ for\ shell\ brace\ expansion',
-  VERSION   => '0.1.6',
+  VERSION   => '0.1.7',
   EXE_FILES => [ qw(bin/brace-compress bin/brace-compress-tester.pl bin/trie-compress.pl) ],
   (eval { ExtUtils::MakeMaker->VERSION(6.31) } ? (LICENSE => 'bsd') : ()),
   PREREQ_PM    => {

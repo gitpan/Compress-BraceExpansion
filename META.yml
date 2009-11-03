@@ -13,4 +13,4 @@ requires:
   Data::Dumper: 0
   ExtUtils::MakeMaker: 0
   Test::More: 0
-version: 0.1.6
+version: 0.1.7

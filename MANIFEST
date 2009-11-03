@@ -17,8 +17,9 @@ t/05.check_merge_point.t
 t/06.transplant.t
 t/07.print_tree.t
 t/CompressBraceExpansionTestCases.pm
-t/perlcritic.t
-t/pod-coverage.t
-t/pod.t
+t/critic.t
+t/kwalitee.t
+t/meta.t
+t/no_tabs.t
 t/release-pod-coverage.t
 t/release-pod-syntax.t
